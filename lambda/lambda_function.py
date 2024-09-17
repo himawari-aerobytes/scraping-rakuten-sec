@@ -219,8 +219,6 @@ def lambda_handler(event,context):
         print("bucket folderに入りました")
         graph_object_key = f"{bucket_folder}/{graph_object_key}"
         table_object_key = f"{bucket_folder}/{table_object_key}"
-    
-    #upload_to_s3(local_graph_path, os.environ.get("BUCKET_NAME"), graph_object_key)
 
     # 画面最大化
     driver.maximize_window()
